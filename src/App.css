@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@94.4,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Oswald", sans-serif;
+  background: linear-gradient(to right, #ffffff 0%, #64869e 100%);
+}
+
+.band-logo {
+  height: 4.9em;
+  width: 11rem;
+  padding: 10px;
+}
+
+.background-1-makeYourself, .background-2-morningView, .background-3-lightGr, .background-4-morningViewxxiii {
+  background-image: url('/assets/background-gifs/album-1-makeYourself.webp'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.background-2-morningView {
+  background-image: url('/assets/background-gifs/album-2-wishYouWereHere.gif');
+}
+
+.background-3-lightGr {
+  background-image: url('/assets/background-gifs/dig.gif');
+}
+
+.background-4-morningViewxxiii {
+  background-image: url('/assets/images/incubus-2024.jpg');
+}
+
+.album__container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.album__item {
+  height: 10rem;
+  width: 10rem;
+  background-color: rgb(177, 180, 215);
+  margin: 1em;
+  border-radius: 3px;
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
+  text-align: center; 
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.album__item:nth-child(1) {
+  background-image: url('/public/assets/images/make-yourself.jpeg');
+  background-size: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.album__item:nth-child(1):hover {
+  transform: scale(1.1);
+}
+
+.album__item:nth-child(2) {
+  background-image: url('/public/assets/images/morning-view.jpg');
+  background-size: cover;
+}
+
+.album__item:nth-child(2):hover {
+  transform: scale(1.1);
+}
+
+.album__item:nth-child(3) {
+  background-image: url('/public/assets/images/light-gr.jpg');
+  background-size: cover;
+}
+
+.album__item:nth-child(3):hover {
+  transform: scale(1.1);
+}
+
+.album__item:nth-child(4) {
+  background-image: url('/public/assets/images/morning-view-xxiii.jpg');
+  background-size: cover;
+}
+
+.album__item:nth-child(4):hover {
+  transform: scale(1.1);
+}
+
+.copyRightFooter {
+  position: fixed;
+  bottom: 0;
+}
+
+.volume-on {
+  position: fixed;
+  cursor: pointer;
+  left: 0vh;
+  bottom: 12vh;
+  width: 2rem;
+  height: 2rem;
+}
+/*media querie for phone*/
+@media only screen and (max-width: 768px) {
+  .background-1-makeYourself, .background-2-morningView, .background-3-lightGr, .background-4-morningViewxxiii {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vw;
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .background-1-makeYourself, .background-2-morningView, .background-3-lightGr, .background-4-morningViewxxiii {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vw;
+    width: 100vw;
+  }
+}
